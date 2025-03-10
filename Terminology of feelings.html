@@ -7,34 +7,31 @@
             background-color: #fcf5e5;
         }
 
-        h1,
-        p {
+        .centered {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
             color: #121212;
-            text-align: right;
-            width: 40%;
-            height: auto;
-            inline-size: 60%;
-        }
-
-        .gallery img {
-            width: 40%;
-            height: auto;
-            margin: 3%;
+            text-align: left;
+            font-size: 70px;
         }
 
         .container {
             display: grid;
             grid-template-columns: auto auto;
-
+            grid-gap: 100px;
+            margin: 2%;
+            width: 100%;
         }
     </style>
+
 </head>
 
 <body>
     <div class="container">
         <img src="resources/terminology/1.jpg" alt=" Angstalgia">
 
-        <div>
+        <div class="centered">
             <h1> Terminology of feelings </h1>
 
             <p>In this project, I explore the rich landscape of human emotions by uncovering new words for feelings we
