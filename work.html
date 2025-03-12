@@ -12,6 +12,45 @@
             color: #fcf5e5;
             text-align: left;
         }
+
+        .grid-container {
+            display: grid;
+            grid-gap: 100px;
+        }
+
+        .pic1 {
+            grid-area: 1 / 1;
+        }
+
+        .pic5 {
+            grid-area: 1 / 2;
+        }
+
+        .pic3 {
+            grid-area: 2 / 2;
+        }
+
+        .pic2 {
+            grid-area: 1 / 3;
+        }
+
+        .pic7 {
+            grid-area: 3 / 1;
+        }
+
+        .pic6 {
+            grid-area: 3 / 2;
+        }
+
+        .pic4 {
+            grid-area: 4 / 2;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            grid-gap: 50px;
+        }
     </style>
 </head>
 
@@ -22,6 +61,20 @@
         <br> Student film "Rose"
         <br> Portraits
     </h1>
+
+    <div class="grid-container">
+        <div class="pic1"> <img src="resources/drop/1.jpg" alt="work"> </div>
+        <div class="pic5"> <img src="resources/drop/5.jpg" alt="work"> </div>
+        <div class="pic3"> <img src="resources/drop/3.jpg" alt="work"> </div>
+        <div class="pic2"> <img src="resources/drop/2.jpg" alt="work"> </div>
+        <div class="pic4"> <img src="resources/drop/4.jpg" alt="work"> </div>
+        <div class="pic6"> <img src="resources/drop/6.jpg" alt="work"> </div>
+        <div class="pic7"> <img src="resources/drop/7.jpg" alt="work"> </div>
+    </div>
+    <div class="container">
+        <img src="resources/drop/8.jpg" alt="work">
+        <img src="resources/drop/9.jpg" alt="work">
+    </div>
 </body>
 
 </html>
