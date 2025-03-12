@@ -24,21 +24,57 @@
             font-size: 20px;
         }
 
+        .container {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 1px;
+            margin: 2%;
+            width: 100%;
+        }
+
         .container img {
-            display: flex;
-            flex-direction: space-between;
+            width: auto;
+            width: 100%;
+            height: auto;
         }
 
-        .rightside {
-            display: flex;
-            justify-content: right;
+        .text {
+            grid-area: 1 / 2;
+        }
+
+        .pic1 {
+            grid-area: 1 / 1;
 
         }
 
-        .leftside {
-            display: flex;
-            justify-self: left;
+        .container1 {
+            display: grid;
+            grid-template-columns: auto auto;
+            width: 100%;
         }
+
+        .container1 img {
+            width: 100%;
+        }
+
+        .pic2 {
+            grid-area: 2 / 1;
+        }
+
+        .pic3 {
+            grid-area: 2 / 2 / span 3;
+        }
+
+
+        .pic5 {
+            grid-area: 3 / 1 / span 2;
+        }
+
+
+        .pic4 {
+            grid-area: 4 / 2;
+        }
+
 
         .base {
             margin: 3%;
@@ -47,53 +83,60 @@
 </head>
 
 <body>
-    <h1> Natural spa and resort Mataruška Banja </h1>
-    <p>
-        In this project, I reimagine the nostalgic allure of vintage postcards through a contemporary lens, focusing on
-        a
-        once-popular spa and resort now shrouded in chaos and neglect. My photographs serve as a juxtaposition to the
-        idyllic
-        scenes captured in the original postcards, transforming their serene beauty into a haunting portrayal of decay.
-        <br>
-        <br>
-        Each new postcard reflects the haunting remnants of a vibrant past—a once-bustling sanctuary for relaxation and
-        escape.
-        Where there were smiling faces and serene landscapes, now lies an unsettling stillness: crumbling walls,
-        overgrown
-        gardens, and empty fountain. This stark contrast invites viewers to confront the passage of time and the
-        inevitable
-        decline of even the most cherished spaces.
-        <br>
-        <br>
-        Through this exploration, I seek to evoke a sense of nostalgia for what once was while highlighting the beauty
-        found in
-        ruin. By presenting these chaotic scenes in a format reminiscent of traditional postcards, I encourage viewers
-        to
-        reflect on memory, loss, and the layers of history embedded in these abandoned places.
-        <br>
-        <br>
-        Ultimately, my work challenges the viewer to consider how we document and remember spaces that have lost their
-        former
-        glory, prompting a dialogue about the delicate balance between beauty and decay.
-    </p>
-    <div class="base">
-        <div class="rightside">
+    <div class="container1">
+        <div class="text">
+            <h1> Natural spa and resort Mataruška Banja </h1>
+            <p>
+                In this project, I reimagine the nostalgic allure of vintage postcards through a contemporary lens,
+                focusing
+                on
+                a
+                once-popular spa and resort now shrouded in chaos and neglect. My photographs serve as a juxtaposition
+                to
+                the
+                idyllic
+                scenes captured in the original postcards, transforming their serene beauty into a haunting portrayal of
+                decay.
+                <br>
+                <br>
+                Each new postcard reflects the haunting remnants of a vibrant past—a once-bustling sanctuary for
+                relaxation
+                and
+                escape.
+                Where there were smiling faces and serene landscapes, now lies an unsettling stillness: crumbling walls,
+                overgrown
+                gardens, and empty fountain. This stark contrast invites viewers to confront the passage of time and the
+                inevitable
+                decline of even the most cherished spaces.
+                <br>
+                <br>
+                Through this exploration, I seek to evoke a sense of nostalgia for what once was while highlighting the
+                beauty
+                found in
+                ruin. By presenting these chaotic scenes in a format reminiscent of traditional postcards, I encourage
+                viewers
+                to
+                reflect on memory, loss, and the layers of history embedded in these abandoned places.
+                <br>
+                <br>
+                Ultimately, my work challenges the viewer to consider how we document and remember spaces that have lost
+                their
+                former
+                glory, prompting a dialogue about the delicate balance between beauty and decay.
+            </p>
+        </div>
+        <div class="pic1">
             <img src="resources/banja/1.jpg" alt=" Postcard 1">
         </div>
-        <div class="leftside">
-            <img src=" resources/banja/2.jpg" alt=" Postcard 2">
-        </div>
-        <div class="rightside">
-            <img src="resources/banja/3.jpg" alt=" Postcard 3">
-        </div>
-        <div class="leftside">
-            <img src="resources/banja/5.jpeg" alt=" Postcard 5">
-        </div>
-        <div class="rightside">
-            <img src="resources/banja/4.jpg" alt=" Postcard 4">
-        </div>
+
     </div>
 
+    <div class="container">
+        <div class="pic2"> <img src="resources/banja/2.jpg" alt="Natural spa and sort Mataruška Banja"> </div>
+        <div class="pic3"> <img src="resources/banja/3.jpg" alt="Natural spa and sort Mataruška Banja"> </div>
+        <div class="pic5"> <img src="resources/banja/5.jpEg" alt="Natural spa and sort Mataruška Banja"> </div>
+        <div class="pic4"> <img src="resources/banja/4.jpg" alt="Natural spa and sort Mataruška Banja"> </div>
+    </div>
 </body>
 
 </html>
