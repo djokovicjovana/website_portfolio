@@ -5,55 +5,77 @@
     <style>
         body {
             background-color: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
-        div {
-            display: grid
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: auto;
         }
 
-        h1 {
-            color: #fcf5e5;
-            text-align: left;
-            font-size: 35px;
-            margin: 80px 50px 50px 900px;
-
-        }
-
+        h1,
         pre {
             color: #fcf5e5;
-            text-align: right;
+            text-align: left;
             font-size: 90%;
+        }
 
+        .text {
+            grid-area: 1 / 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .video {
+            grid-area: 1 / 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
 
 <body>
-    <h1> Anemoia </h1>
-    <pre>
-        Growing up, I was immersed in the world of dance—each class, each performance igniting a passion that seemed
-        boundless. I envisioned a future as a professional dancer, a path that felt as vibrant and fluid as the movements I
-        practiced. However, as life unfolded, circumstances led me away from this dream. Anemoia embodies this longing for what
-        could have been, a wistful yearning for a past I can almost touch but never truly live.
+    <div class="container">
+        <div class="text">
+            <div>
+                <h1> Anemoia </h1>
+                <pre>
+ Growing up, I was immersed in the world of dance—each class, each performance igniting a passion that seemed
+ boundless. I envisioned a future as a professional dancer, a path that felt as vibrant and fluid as the movements I
+ practiced. However, as life unfolded, circumstances led me away from this dream. Anemoia embodies this longing for what
+ could have been, a wistful yearning for a past I can almost touch but never truly live.
 
 
-        The video aspect of Anemoia draws inspiration from the image of ballerinas in boxes—delicate, confined, yet
-        beautifully expressive. I resonate with this metaphor, feeling like one of those dancers, beautifully poised yet constrained
-        by the realities of my life possibilities. Through my movements, I explore the tension between aspiration and
-        limitation, capturing the essence of that childhood innocence alongside a sense of longing.
+ The video aspect of Anemoia draws inspiration from the image of ballerinas in boxes—delicate, confined, yet
+ beautifully expressive. I resonate with this metaphor, feeling like one of those dancers, beautifully poised yet constrained
+ by the realities of my life possibilities. Through my movements, I explore the tension between aspiration and
+ limitation, capturing the essence of that childhood innocence alongside a sense of longing.
 
 
-        Anemoia is more than just a personal narrative; it’s a celebration of the dreams we hold dear, the paths we
-        traverse, and the memories we cherish. It invites us to consider how the echoes of our past shape our present, and to find
-        beauty in the stories we carry within us.
+ Anemoia is more than just a personal narrative; it’s a celebration of the dreams we hold dear, the paths we
+ traverse, and the memories we cherish. It invites us to consider how the echoes of our past shape our present, and to find
+ beauty in the stories we carry within us.
 
-    </pre>
-    <div>
-        <video width="800" height="500" controls
-            style="float: left; height: 500px; margin-left: 30px; top:105px; position:absolute">
-            <source src="resources/ples/final.mp4" type="video/mp4">
-        </video>
+             </pre>
+            </div>
+        </div>
+
+        <div class="video">
+            <video width="800" height="500" controls>
+                <source src="resources/ples/final.mp4" type="video/mp4">
+            </video>
+        </div>
     </div>
+
 </body>
 
 </html>
