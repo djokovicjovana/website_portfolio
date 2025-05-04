@@ -5,10 +5,11 @@
     <style>
         body {
             background-color: #121212;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 100vh;
+            grid-template-areas:
+                "video text";
         }
 
         .container {
@@ -27,17 +28,13 @@
             font-size: 90%;
         }
 
-        .text {
-            grid-area: 1 / 2;
-            display: flex;
-            justify-content: center;
+        video {
+            grid-area: video;
             align-items: center;
         }
 
-        .video {
-            grid-area: 1 / 1;
-            display: flex;
-            justify-content: center;
+        text {
+            grid-area: text;
             align-items: center;
         }
     </style>
