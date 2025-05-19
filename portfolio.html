@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title> Jovana Djokovic portfolio </title>
     <style>
         body {
@@ -36,12 +38,29 @@
             color: #fcf5e5;
             word-spacing: 30px;
         }
+
+        .text {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+        }
+
+        @media screen and (max-width: 600px) {
+            a {
+                font-size: 20px;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <h1> Jovana Djokovic </h1>
-    <h2>
+    <h1 class="text"> Jovana Djokovic </h1>
+    <h2 class="text">
         <a href="work.html"> Work</a>
         <a href="project.html"> Projects</a>
         <a href="about.html"> About</a>
