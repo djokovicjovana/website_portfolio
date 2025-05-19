@@ -2,16 +2,26 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title> Work </title>
+
     <style>
         body {
             background-color: #121212;
         }
 
-        #text {
+        .text {
             color: #fcf5e5;
             text-align: left;
-            font-size: 500%;
+            margin: 3%;
+            font-size: 80px;
+        }
+
+        .text2 {
+            color: #fcf5e5;
+            text-align: center;
+            font-size: 100px;
             margin: 3%;
         }
 
@@ -202,17 +212,41 @@
             object-fit: cover;
         }
 
-        h2 {
-            color: #fcf5e5;
-            font-size: 1000%;
-            margin: 20px 0;
-            text-align: center;
+        @media only screen and (max-width: 400px) {
+            div.text {
+                font-size: 10px;
+            }
+
+            .text2 {
+                font-size: 15px;
+            }
+        }
+
+        @media only screen and (min-width: 400px) and (max-width: 1800px) {
+            div.text {
+                font-size: 30px;
+            }
+
+            .text2 {
+                font-size: 45px;
+            }
+        }
+
+        @media only screen and (min-width: 1800px) {
+
+            div.text {
+                font-size: 70px;
+            }
+
+            .text2 {
+                font-size: 150px;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div id="text">
+    <div class="text">
         <h1> Drop
             <br> Pointless films
             <br> Blending options- Sunny day
@@ -221,7 +255,7 @@
         </h1>
     </div>
 
-    <h2> Drop </h2>
+    <h2 class="text2"> Drop </h2>
 
     <div class="grid-container">
         <div class="pic2"> <img src="resources/drop/2.jpg" alt="work"> </div>
@@ -278,7 +312,7 @@
         <img src="resources/drop/36.jpg" alt="work">
     </div>
 
-    <h2> Pointless films </h2>
+    <h2 class="text2"> Pointless films </h2>
 
     <div class="pointless">
         <div class="p1"> <img src="resources/pointless_films/1.jpg" alt="work"> </div>
@@ -293,7 +327,7 @@
         <div class="p10"> <img src="resources/pointless_films/10.jpg" alt="work"> </div>
     </div>
 
-    <h2> Blending options- Sunny day </h2>
+    <h2 class="text2"> Blending options- Sunny day </h2>
 
     <div class="blendingoptions">
         <img src="resources/andja/7.jpg" alt="work">
@@ -324,7 +358,7 @@
         <img src="resources/andja/17.jpg" alt="work">
     </div>
 
-    <h2> Student film "Rose" </h2>
+    <h2 class="text2"> Student film "Rose" </h2>
 
     <div class="rose">
         <img src="resources/rose/1.jpg" alt="work">
