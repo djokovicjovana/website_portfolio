@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
     <style>
@@ -87,6 +88,27 @@
 
         .base {
             margin: 3%;
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            .container,
+            .container1 {
+                grid-template-columns: 1fr;
+            }
+
+            .container .pic2,
+            .container .pic3,
+            .container .pic4,
+            .container .pic5,
+            .container1 .pic1,
+            .container1 .text {
+                grid-area: unset;
+            }
+
+            .text {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
