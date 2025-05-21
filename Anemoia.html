@@ -2,46 +2,80 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             background-color: #121212;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             min-height: 100vh;
-            grid-template-areas:
-                "video text";
+
         }
 
         .container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
+            max-width: 100vw;
+            width: 100%;
+            margin: auto;
+            gap: 1%;
+        }
+
+        .video,
+        .text {
+            max-width: 50%;
             width: 100%;
             height: auto;
         }
 
-        h1,
-        pre {
+        .video video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .text {
             color: #fcf5e5;
-            text-align: left;
-            font-size: 90%;
         }
 
-        video {
-            grid-area: video;
-            align-items: center;
+        .text pre {
+            white-space: pre-wrap;
+            word-break: break-word;
         }
 
-        text {
-            grid-area: text;
-            align-items: center;
+        @media only screen and (max-width: 1000px) {
+            .container {
+                flex-direction: column;
+                max-width: 100%;
+                width: 100%;
+            }
+
+            .video,
+            .text {
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+            }
+
+            .text {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
 
 <body>
     <div class="container">
+
+        <div class="video">
+            <video width="800" height="500" controls>
+                <source src="resources/ples/final.mp4" type="video/mp4">
+            </video>
+        </div>
+
         <div class="text">
             <div>
                 <h1> Anemoia </h1>
@@ -66,11 +100,7 @@
             </div>
         </div>
 
-        <div class="video">
-            <video width="800" height="500" controls>
-                <source src="resources/ples/final.mp4" type="video/mp4">
-            </video>
-        </div>
+
     </div>
 
 </body>
