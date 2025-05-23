@@ -11,11 +11,47 @@
             background-color: #121212;
         }
 
+        ul {
+            list-style-type: circle;
+            overflow: hidden;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2%;
+            position: fixed;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: #fcf5e5;
+            text-align: center;
+            width: 100%;
+            font-size: 20px;
+            padding: 20px 50px;
+            text-decoration: none;
+        }
+
+
+        li a:hover {
+            color: #afafaf;
+        }
+
+        li a.active {
+            color: #afafaf;
+        }
+
+
+
         .text {
             color: #fcf5e5;
             text-align: left;
             margin: 3%;
-            font-size: 80px;
+            font-size: 100px;
         }
 
         .text2 {
@@ -246,6 +282,13 @@
 </head>
 
 <body>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a class="active" href="#work">Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
     <div class="text">
         <h1> Drop
             <br> Pointless films
