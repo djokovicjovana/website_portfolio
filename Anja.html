@@ -7,32 +7,55 @@
             background-color: #1a1a1a;
         }
 
+        ul {
+            overflow: hidden;
+            background-color: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            z-index: 1000;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        li a {
+            display: block;
+            color: #fcf5e5;
+            font-size: 100px;
+            padding: 20px 50px;
+            text-decoration: none;
+            width: auto;
+        }
+
+
+        li a:hover {
+            color: #afafaf;
+        }
+
         .base {
-            margin: 3%;
+            margin: 1%;
+            overflow: hidden;
         }
 
         h1,
         p {
             color: #fcf5e5;
-            text-align: right;
+            text-align: left;
         }
 
-        .rightside {
-            display: flex;
-            justify-content: right;
-
-        }
-
-        .center {
-            display: flex;
-            justify-self: center;
-        }
-
-        .leftside {
+        .container {
             display: grid;
             grid-template-columns: auto auto;
             grid-template-rows: auto auto;
-            gap: 20px;
+            gap: 2%;
         }
 
         .pic1 {
@@ -44,19 +67,107 @@
         .text {
             grid-area: 1 / 2 / span 2;
             align-content: center;
+            font-size: 100px;
         }
 
         .pic2 {
             grid-area: 2 / 1;
             display: flex;
             justify-content: right;
+            height: 40%;
+        }
+
+        .rightside {
+            display: flex;
+            justify-content: right;
+            margin: 1%;
+            margin-bottom: 2%;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+        }
+
+        .center img {
+            max-width: 100%;
+            height: auto;
+            margin: 1%;
+        }
+
+        .center2 {
+            display: flex;
+            justify-self: center;
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+        }
+
+        .center2 img {
+            height: 3000px;
+            width: 100%;
+            max-width: 100%;
+            object-fit: cover;
+            margin: 2%;
+            display: block;
+        }
+
+        .scar {
+            display: flex;
+            justify-content: center;
+        }
+
+        .scar img {
+            max-width: 35%;
+            height: auto;
+        }
+
+        .scar2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .scar2 img {
+            max-width: 35%;
+            height: 35%;
+        }
+
+        .leftside img {
+            margin: 1%;
+            margin-top: 2%;
+        }
+
+        .center1 {
+            display: flex;
+            justify-content: center;
+            margin-top: 2%;
+        }
+
+        .blurry {
+            display: flex;
+            justify-content: center;
+        }
+
+        .blurry img {
+            max-width: 50%;
+            height: auto;
         }
     </style>
 </head>
 
 <body>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
     <div class="base">
-        <div class="leftside">
+        <div class="container">
             <div class="pic1"> <img src="resources/anja/1.jpg" alt=" Anja"> </div>
 
 
@@ -117,11 +228,11 @@
                 <img src="resources/anja/3.jpg" alt=" Anja">
                 <img src="resources/anja/4.jpg" alt=" Anja">
             </div>
-            <div class="center">
+            <div class="center2">
                 <img src="resources/anja/5.jpg" alt=" Anja">
                 <img src="resources/anja/6.jpg" alt=" Anja">
             </div>
-            <div class="center">
+            <div class="scar">
                 <img src="resources/anja/7.jpg" alt=" Anja">
                 <img src="resources/anja/8.jpg" alt=" Anja">
                 <img src="resources/anja/9.jpg" alt=" Anja">
@@ -132,24 +243,24 @@
             <div class="rightside">
                 <img src="resources/anja/11.jpg" alt=" Anja">
             </div>
-            <div class="center">
+            <div class="scar2">
                 <img src="resources/anja/12.jpg" alt=" Anja">
                 <img src="resources/anja/13.jpg" alt=" Anja">
                 <img src="resources/anja/14.jpg" alt=" Anja">
-                <img src="resources/anja/15.jpg" alt=" Anja">
+
             </div>
-            <div class="center">
+            <div class="center1">
                 <img src="resources/anja/16.jpg" alt=" Anja">
             </div>
-            <div class="center">
+            <div class="center2">
                 <img src="resources/anja/17.jpg" alt=" Anja">
                 <img src="resources/anja/18.jpg" alt=" Anja">
             </div>
-            <div class="center">
+            <div class="blurry">
                 <img src="resources/anja/19.jpg" alt=" Anja">
                 <img src="resources/anja/20.jpg" alt=" Anja">
             </div>
-            <div class="center">
+            <div class="center1">
                 <img src="resources/anja/21.jpg" alt=" Anja">
             </div>
         </div>

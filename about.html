@@ -8,6 +8,43 @@
             background-color: #121212;
         }
 
+        ul {
+            overflow: hidden;
+            background-color: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            z-index: 1000;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        li a {
+            display: block;
+            color: #fcf5e5;
+            font-size: 100px;
+            padding: 20px 50px;
+            text-decoration: none;
+            width: auto;
+        }
+
+
+        li a:hover {
+            color: #afafaf;
+        }
+
+        li a.active {
+            color: #afafaf;
+        }
+
         .container {
             color: #fcf5e5;
             display: flex;
@@ -45,6 +82,16 @@
                 font-size: 10px;
 
             }
+
+            ul {
+                font-size: 10px;
+                max-width: 100%;
+            }
+
+            li a {
+                font-size: 20px;
+                padding: 8px 10px;
+            }
         }
 
         .pic {
@@ -56,6 +103,14 @@
 </head>
 
 <body>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a class="active" href="#about">About</a></li>
+    </ul>
+
     <div class="container">
         <pre class="text">
 Jovana Đoković, born in 1999 in Kraljevo, is an emerging photographer who graduated at the Academy of
