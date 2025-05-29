@@ -50,9 +50,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            font-size: 13px;
+            max-width: 100%;
+            height: auto;
+            font-size: 14px;
             flex-wrap: wrap;
+            gap: 2%;
+            margin-top: 9%;
+
         }
 
         .text {
@@ -91,6 +95,9 @@
             li a {
                 font-size: 20px;
                 padding: 8px 10px;
+                width: auto;
+                box-sizing: border-box;
+                white-space: normal;
             }
         }
 
@@ -105,39 +112,43 @@
 <body>
 
     <ul>
-        <li><a href="home.html">Home</a></li>
+        <li><a href="portfolio.html">Home</a></li>
         <li><a href="work.html">Work</a></li>
         <li><a href="project.html">Projects</a></li>
         <li><a class="active" href="about.html">About</a></li>
     </ul>
 
     <div class="container">
-        <pre class="text">
-Jovana Đoković, born in 1999 in Kraljevo, is an emerging photographer who graduated at the Academy of
-Arts in Novi Sad. Her artistic journey began at the Art School in Kraljevo, where she cultivated her skills and
-passion for visual art.
-
-She has participated in ten group exhibitions, among which the following stand out:
-
-- Annual Exhibition of Young Visual Artists of Raška District, Cultural Center Ribnica, Kraljevo, 2017-2018
-- Big FSU Contest for High School Creative Students, Dorćol Platz, Belgrade, 2018
-- World Biennale of Student Photography, SKCNS Fabrika, Novi Sad, 2021
-- World Biennale of Student Photography, exhibition space of the Academy of Arts, Novi Sad, 2023
-
-Jovana also had her first solo exhibition titled “Anemoia” at the Thrill Bar Gallery in Kraljevo in 2022.
-
-Her photographic style is deeply rooted in the exploration of human emotions, creating an immersive
-experience that invites viewers to engage on a sensory level. Her use of intentional blur in certain images
-serves to amplify the emotional resonance, encouraging a more profound connection rather than mere observation. By
-prioritizing feelings over technical precision, Jovana aims to evoke a sense of empathy and introspection, prompting viewers
-to not only see but also feel the stories behind her photographs. This approach transforms each image into a
-dynamic dialogue, where the viewer is invited to reflect on their own emotions and experiences in response to her work.
-
-Alongside her artistic pursuits, Jovana is the official photographer for Club Drop and Lollipop parties,
-which enhances her experience in the visual arts.
-
-To explore her work further check out her Instagram profile @anemoia.7.
-    </pre>
+        <p class="text">
+            Jovana Đoković, born in 1999 in Kraljevo, is an emerging photographer who graduated at the Academy of
+            Arts in Novi Sad. Her artistic journey began at the Art School in Kraljevo, where she cultivated her skills
+            and
+            passion for visual art.
+            <br>
+            She has participated in ten group exhibitions, among which the following stand out:
+            <br>
+            - Annual Exhibition of Young Visual Artists of Raška District, Cultural Center Ribnica, Kraljevo, 2017-2018
+            - Big FSU Contest for High School Creative Students, Dorćol Platz, Belgrade, 2018
+            - World Biennale of Student Photography, SKCNS Fabrika, Novi Sad, 2021
+            - World Biennale of Student Photography, exhibition space of the Academy of Arts, Novi Sad, 2023
+            <br>
+            Jovana also had her first solo exhibition titled “Anemoia” at the Thrill Bar Gallery in Kraljevo in 2022.
+            <br>
+            Her photographic style is deeply rooted in the exploration of human emotions, creating an immersive
+            experience that invites viewers to engage on a sensory level. Her use of intentional blur in certain images
+            serves to amplify the emotional resonance, encouraging a more profound connection rather than mere
+            observation. By
+            prioritizing feelings over technical precision, Jovana aims to evoke a sense of empathy and introspection,
+            prompting viewers
+            to not only see but also feel the stories behind her photographs. This approach transforms each image into a
+            dynamic dialogue, where the viewer is invited to reflect on their own emotions and experiences in response
+            to her work.
+            <br>
+            Alongside her artistic pursuits, Jovana is the official photographer for Club Drop and Lollipop parties,
+            which enhances her experience in the visual arts.
+            <br>
+            To explore her work further check out her Instagram profile @anemoia.7.
+        </p>
 
         <img class="pic" src="about_pic.jpg" alt="Image">
     </div>
