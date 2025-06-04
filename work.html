@@ -253,9 +253,9 @@
             object-fit: cover;
         }
 
-        @media only screen and (max-width: 400px) {
+        @media only screen and (min-width: 100px) {
             div.text {
-                font-size: 10px;
+                font-size: 5px;
             }
 
             .text2 {
@@ -274,26 +274,66 @@
                 box-sizing: border-box;
                 white-space: normal;
             }
+
+            ul {
+                font-size: 50px;
+                max-width: 100%;
+            }
+
+            li a {
+                font-size: 50px;
+                padding: 8px 10px;
+                width: auto;
+                box-sizing: border-box;
+                white-space: normal;
+            }
         }
 
         @media only screen and (min-width: 400px) and (max-width: 1800px) {
             div.text {
-                font-size: 10px;
+                font-size: 30px;
+                margin-top: 5%;
             }
 
             .text2 {
-                font-size: 25px;
+                font-size: 100px;
+            }
+
+            ul {
+                font-size: 50px;
+                max-width: 100%;
+            }
+
+            li a {
+                font-size: 50px;
+                padding: 8px 10px;
+                width: auto;
+                box-sizing: border-box;
+                white-space: normal;
             }
         }
 
         @media only screen and (min-width: 1800px) {
 
             div.text {
-                font-size: 70px;
+                font-size: 40px;
+                margin-top: 7%;
             }
 
             .text2 {
-                font-size: 150px;
+                font-size: 100px;
+            }
+        }
+
+        @media only screen and (min-width: 3080px) {
+
+            div.text {
+                font-size: 40px;
+                margin-top: 5%;
+            }
+
+            .text2 {
+                font-size: 100px;
             }
         }
     </style>
