@@ -17,7 +17,7 @@
             position: fixed;
             top: 0;
             left: 0;
-            width: 100vw;
+            width: 100%;
             margin: 0;
             padding: 0;
             z-index: 1000;
@@ -51,27 +51,40 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: row;
             max-width: 100%;
             height: auto;
-            font-size: 14px;
+            font-size: 18px;
             font-family: 'Bricolage Grotesque', sans-serif;
             flex-wrap: wrap;
             gap: 2%;
             margin-top: 9%;
-
+            padding: 3%;
         }
 
         .text {
-            white-space: pre-wrap;
-            word-break: break-word;
+            flex: 1;
+            text-align: left;
         }
 
-        @media only screen and (max-width: 500px) {
+        .image {
+            flex: 1;
+            max-width: 100%;
+            height: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        @media only screen and (max-width: 1200px) {
             .container {
                 flex-direction: column;
                 max-width: 100%;
                 width: 100%;
-
+                overflow-x: hidden;
             }
 
             .pic {
@@ -85,7 +98,7 @@
                 max-width: 100%;
                 width: 100%;
                 height: auto;
-                font-size: 10px;
+                font-size: 14px;
 
             }
 
@@ -127,14 +140,24 @@
             and
             passion for visual art.
             <br>
+            <br>
             She has participated in ten group exhibitions, among which the following stand out:
             <br>
+            <br>
             - Annual Exhibition of Young Visual Artists of Raška District, Cultural Center Ribnica, Kraljevo, 2017-2018
+            <br>
             - Big FSU Contest for High School Creative Students, Dorćol Platz, Belgrade, 2018
+            <br>
             - World Biennale of Student Photography, SKCNS Fabrika, Novi Sad, 2021
+            <br>
+            - Annual Exhibition of Young Visual Artists of Raška District, Cultural Center Ribnica, Kraljevo, 2022-
+            winner
+            <br>
             - World Biennale of Student Photography, exhibition space of the Academy of Arts, Novi Sad, 2023
             <br>
+            <br>
             Jovana also had her first solo exhibition titled “Anemoia” at the Thrill Bar Gallery in Kraljevo in 2022.
+            <br>
             <br>
             Her photographic style is deeply rooted in the exploration of human emotions, creating an immersive
             experience that invites viewers to engage on a sensory level. Her use of intentional blur in certain images
@@ -146,8 +169,10 @@
             dynamic dialogue, where the viewer is invited to reflect on their own emotions and experiences in response
             to her work.
             <br>
+            <br>
             Alongside her artistic pursuits, Jovana is the official photographer for Club Drop and Lollipop parties,
             which enhances her experience in the visual arts.
+            <br>
             <br>
             To explore her work further check out her Instagram profile @anemoia.7.
         </p>
