@@ -2,11 +2,18 @@
 <html>
 
 <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             background-color: #121212;
+            font-family: 'Montserrat', sans-serif;
         }
 
         ul {
@@ -19,9 +26,8 @@
             top: 0;
             left: 0;
             width: 100vw;
-            margin: 0;
-            padding: 0;
             z-index: 1000;
+            list-style: none;
         }
 
         li {
@@ -31,68 +37,51 @@
         li a {
             display: block;
             color: #fcf5e5;
-            font-size: 20px;
+            font-size: 25px;
             font-family: 'Montserrat', sans-serif;
-            width: auto;
-            padding: none 10px;
+            padding: 5px 12px;
+            text-decoration: none;
         }
 
-
-        li a:hover {
-            color: #afafaf;
-        }
-
+        li a:hover,
         li a.active {
             color: #afafaf;
-        }
-
-        div,
-        a {
-            color: #fcf5e5;
-            font-size: 30px;
-            text-align: center;
-            margin: 50px;
-            text-decoration: none;
-            font-size: 30px;
-            font-family: 'Bricolage Grotesque', sans-serif;
         }
 
         .text {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 200px;
+            margin-top: 80px;
         }
 
-        a:hover {
+        .text a {
             color: #fcf5e5;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 130px;
+            text-decoration: none;
+            font-family: 'Bricolage Grotesque', sans-serif;
+        }
+
+        .text a:hover {
+            color: #afafaf;
         }
 
         @media screen and (max-width: 600px) {
-
-            div,
-            a {
+            li a {
                 font-size: 20px;
-                margin: 20px;
+                padding: 5px 10px;
             }
 
             .text {
-                margin-top: 300px;
+                margin-top: 130px;
             }
 
-            ul {
-                font-size: 10px;
-                max-width: 100%;
-            }
-
-            li a {
+            .text a {
                 font-size: 20px;
-                padding: 8px 10px;
-                width: auto;
-                box-sizing: border-box;
-                white-space: normal;
+                margin: 25px;
             }
-
         }
     </style>
 </head>
@@ -106,14 +95,10 @@
     </ul>
 
     <div class="text">
-        <a href="Terminology of feelings.html"> Terminology of feelings</a>
-
-        <a href="Anemoia.html"> Anemoia </a>
-
+        <a href="Terminology of feelings.html">Terminology of feelings</a>
+        <a href="Anemoia.html">Anemoia</a>
         <a href="Natural spa and resort Mataruška Banja.html">Natural spa and resort Mataruška Banja</a>
-
-        <a href="Anja.html"> Anja</a>
-
+        <a href="Anja.html">Anja</a>
     </div>
 </body>
 
