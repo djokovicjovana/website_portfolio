@@ -11,7 +11,7 @@
             background-color: #121212;
         }
 
-        ul {
+        .navigation {
             overflow: hidden;
             background-color: #121212;
             display: flex;
@@ -36,8 +36,6 @@
             font-family: 'Montserrat', sans-serif;
             padding: 10px 24px;
             text-decoration: none;
-            width: auto;
-            font-size: 50px;
         }
 
 
@@ -49,12 +47,10 @@
             color: #afafaf;
         }
 
-
-        nav.side {
+        nav {
             color: #fcf5e5;
             text-align: left;
             margin: 3%;
-            font-size: 40px;
             font-family: 'Bricolage Grotesque', sans-serif;
         }
 
@@ -148,8 +144,6 @@
             height: auto;
             object-fit: cover;
         }
-
-
 
         .pointless {
             display: grid;
@@ -254,83 +248,88 @@
             object-fit: cover;
         }
 
-        nav.side h1 a {
+        nav h1 a {
             color: #fcf5e5;
             text-decoration: none;
             font-family: 'Bricolage Grotesque', sans-serif;
         }
 
-        nav.side h1 a:hover {
+        nav h1 a:hover {
             color: #afafaf;
         }
 
         @media only screen and (min-width: 400px) and (max-width: 1200px) {
-            nav.side {
-                font-size: 10px;
-                margin-top: 20%;
+            .navigation {
+                font-size: 20px;
+                padding: 2px 12px;
             }
 
             .text2 {
-                font-size: 20px;
+                font-size: 30px;
                 margin-top: 20%;
-            }
-
-            ul.nav {
-                font-size: 20px;
-                max-width: 100%;
             }
 
             ul.sidenav {
                 position: static;
                 flex-direction: column;
                 align-items: flex-start;
+                font-size: 15px;
+                margin-top: 15%;
             }
 
             li a {
-                font-size: 20px;
                 padding: 5px 10px;
             }
         }
 
 
         @media only screen and (min-width: 1200px) {
-            nav.side {
-                font-size: 20px;
-                margin-top: 7%;
+            .navigation {
+                font-size: 25px;
+                padding: 1px 5px;
+            }
+
+            ul.sidenav {
+                font-size: 25px;
             }
 
             .text2 {
-                font-size: 50px;
+                font-size: 30px;
             }
         }
 
         @media only screen and (min-width: 3080px) {
-            nav.side {
-                font-size: 20px;
-                margin-top: 5%;
+            .navigation {
+                font-size: 100px;
+                padding: 1px 20px;
+            }
+
+            ul.sidenav {
+                font-size: 100px;
+                margin-top: 20%;
             }
 
             .text2 {
-                font-size: 50px;
+                font-size: 150px;
             }
         }
     </style>
 </head>
 
 <body>
-    <ul class="nav">
+    <ul class="navigation">
         <li><a href="portfolio.html">Home</a></li>
         <li><a class="active" href="work.html">Work</a></li>
         <li><a href="project.html">Projects</a></li>
         <li><a href="about.html">About</a></li>
     </ul>
 
-    <nav class="side">
-        <ul class="sidenav"></ul>
-        <li><a href="#drop">Drop</a></li>
-        <li><a href="#pointless-films">Pointless films</a></li>
-        <li><a href="#blending-options">Blending options- Sunny day</a></li>
-        <li><a href="#rose">Student film "Rose"</a></li>
+    <nav>
+        <ul class="sidenav">
+            <li><a href="#drop">Drop</a></li>
+            <li><a href="#pointless-films">Pointless films</a></li>
+            <li><a href="#blending-options">Blending options- Sunny day</a></li>
+            <li><a href="#rose">Student film "Rose"</a></li>
         </ul>
     </nav>
 
