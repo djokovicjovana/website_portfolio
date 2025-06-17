@@ -63,12 +63,18 @@
             grid-area: 1 / 1;
             display: flex;
             justify-content: right;
+            width: 50vw;
+        }
+
+        .pic1 img {
+            width: 45vw;
+            height: auto;
         }
 
         .text {
             grid-area: 1 / 2 / span 2;
             align-content: center;
-            font-size: 100px;
+            font-size: 1vw;
             font-family: 'Bricolage Grotesque', sans-serif;
         }
 
@@ -76,46 +82,65 @@
             grid-area: 2 / 1;
             display: flex;
             justify-content: right;
-            height: 40%;
         }
 
-        .rightside {
+        .pic2 img {
+            max-width: 100%;
+            height: 40vh;
+        }
+
+        .right {
             display: flex;
             justify-content: right;
             margin: 1%;
             margin-bottom: 2%;
         }
 
+        .right img {
+            max-width: 50vw;
+        }
+
         .center {
             display: flex;
             justify-content: center;
             align-items: center;
-            max-width: 100%;
-            width: 100%;
-            height: auto;
         }
 
         .center img {
+            max-height: 70vh;
             max-width: 100%;
+            min-width: 5vw;
+            width: auto;
             height: auto;
-            margin: 1%;
+            margin-top: 5%;
+            margin-bottom: 2%;
         }
 
         .center2 {
             display: flex;
-            justify-self: center;
-            max-width: 100%;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 75vh;
+        }
+
+        .center2 img {
+            height: 100%;
+            width: auto;
+            margin: 1%;
+            object-fit: contain;
+            max-height: 75vh;
+            overflow: hidden;
+        }
+
+        .width img {
             width: 100%;
             height: auto;
         }
 
-        .center2 img {
-            height: 3000px;
-            width: 100%;
-            max-width: 100%;
-            object-fit: cover;
-            margin: 2%;
-            display: block;
+        .height img {
+            height: 100%;
+            width: auto;
         }
 
         .scar {
@@ -126,6 +151,7 @@
         .scar img {
             max-width: 35%;
             height: auto;
+            margin-top: 2%;
         }
 
         .scar2 {
@@ -138,15 +164,35 @@
             height: 35%;
         }
 
-        .leftside img {
+        .left img {
             margin: 1%;
             margin-top: 2%;
+            max-width: 50vw;
         }
 
         .center1 {
             display: flex;
             justify-content: center;
             margin-top: 2%;
+            width: 100%;
+        }
+
+        .center1 img {
+            max-width: 30vw;
+            height: auto;
+        }
+
+        .center3 {
+            display: flex;
+            justify-content: center;
+            margin-top: 2%;
+            width: 100%;
+        }
+
+        .center3 img {
+            max-width: 60vw;
+            height: auto;
+            margin: 2%;
         }
 
         .blurry {
@@ -157,6 +203,7 @@
         .blurry img {
             max-width: 50%;
             height: auto;
+            margin-top: 2%;
         }
     </style>
 </head>
@@ -233,18 +280,18 @@
                 <img src="resources/anja/4.jpg" alt=" Anja">
             </div>
             <div class="center2">
-                <img src="resources/anja/5.jpg" alt=" Anja">
-                <img src="resources/anja/6.jpg" alt=" Anja">
+                <img class="width" src="resources/anja/5.jpg" alt=" Anja">
+                <img class="height" src="resources/anja/6.jpg" alt=" Anja">
             </div>
             <div class="scar">
                 <img src="resources/anja/7.jpg" alt=" Anja">
                 <img src="resources/anja/8.jpg" alt=" Anja">
                 <img src="resources/anja/9.jpg" alt=" Anja">
             </div>
-            <div class="leftside">
+            <div class="left">
                 <img src="resources/anja/10.jpg" alt=" Anja">
             </div>
-            <div class="rightside">
+            <div class="right">
                 <img src="resources/anja/11.jpg" alt=" Anja">
             </div>
             <div class="scar2">
@@ -253,7 +300,7 @@
                 <img src="resources/anja/14.jpg" alt=" Anja">
 
             </div>
-            <div class="center1">
+            <div class="center3">
                 <img src="resources/anja/16.jpg" alt=" Anja">
             </div>
             <div class="center2">
