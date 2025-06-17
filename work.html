@@ -34,10 +34,10 @@
             display: block;
             color: #fcf5e5;
             font-family: 'Montserrat', sans-serif;
-            padding: 10px 24px !important;
+            padding: 10px 24px;
             text-decoration: none;
             width: auto;
-            font-size: 50px !important;
+            font-size: 50px;
         }
 
 
@@ -50,18 +50,18 @@
         }
 
 
-        .text {
+        nav.side {
             color: #fcf5e5;
             text-align: left;
             margin: 3%;
-            font-size: 40px !important;
+            font-size: 40px;
             font-family: 'Bricolage Grotesque', sans-serif;
         }
 
         .text2 {
             color: #fcf5e5;
             text-align: center;
-            font-size: 100px !important;
+            font-size: 100px;
             margin: 3%;
             font-family: 'Bricolage Grotesque', sans-serif;
             scroll-margin-top: 100px;
@@ -254,78 +254,85 @@
             object-fit: cover;
         }
 
-        .text h1 a {
+        nav.side h1 a {
             color: #fcf5e5;
             text-decoration: none;
             font-family: 'Bricolage Grotesque', sans-serif;
         }
 
-        .text h1 a:hover {
+        nav.side h1 a:hover {
             color: #afafaf;
         }
 
         @media only screen and (min-width: 400px) and (max-width: 1200px) {
-            .text {
-                font-size: 10px !important;
-                margin-top: 20% !important;
+            nav.side {
+                font-size: 10px;
+                margin-top: 20%;
             }
 
             .text2 {
-                font-size: 20px !important;
-                margin-top: 20% !important;
+                font-size: 20px;
+                margin-top: 20%;
             }
 
-            ul {
-                font-size: 20px !important;
+            ul.nav {
+                font-size: 20px;
                 max-width: 100%;
             }
 
+            ul.sidenav {
+                position: static;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
             li a {
-                font-size: 20px !important;
-                padding: 5px 10px !important;
+                font-size: 20px;
+                padding: 5px 10px;
             }
         }
 
 
         @media only screen and (min-width: 1200px) {
-            .text {
-                font-size: 20px !important;
-                margin-top: 7% !important;
+            nav.side {
+                font-size: 20px;
+                margin-top: 7%;
             }
 
             .text2 {
-                font-size: 50px !important;
+                font-size: 50px;
             }
         }
 
         @media only screen and (min-width: 3080px) {
-            .text {
-                font-size: 20px !important;
-                margin-top: 5% !important;
+            nav.side {
+                font-size: 20px;
+                margin-top: 5%;
             }
 
             .text2 {
-                font-size: 50px !important;
+                font-size: 50px;
             }
         }
     </style>
 </head>
 
 <body>
-    <ul>
+    <ul class="nav">
         <li><a href="portfolio.html">Home</a></li>
         <li><a class="active" href="work.html">Work</a></li>
         <li><a href="project.html">Projects</a></li>
         <li><a href="about.html">About</a></li>
     </ul>
 
-    <div class="text">
-        <h1><a href="#drop">Drop</a>
-            <br> <a href="#pointless-films">Pointless films</a>
-            <br> <a href="#blending-options">Blending options- Sunny day</a>
-            <br> <a href="#rose">Student film "Rose"</a>
-        </h1>
-    </div>
+    <nav class="side">
+        <ul class="sidenav"></ul>
+        <li><a href="#drop">Drop</a></li>
+        <li><a href="#pointless-films">Pointless films</a></li>
+        <li><a href="#blending-options">Blending options- Sunny day</a></li>
+        <li><a href="#rose">Student film "Rose"</a></li>
+        </ul>
+    </nav>
 
     <h2 class="text2" id="drop"> Drop </h2>
 
