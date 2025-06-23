@@ -40,13 +40,12 @@
         }
 
 
-        li a:hover {
-            color: #afafaf;
-        }
-
+        li a:hover,
         li a.active {
             color: #afafaf;
         }
+
+
 
         ul.sidenav {
             color: #fcf5e5;
@@ -61,8 +60,9 @@
             text-align: center;
             font-size: 2.5vw;
             margin: 3%;
+            margin-top: 15%;
             font-family: 'Bricolage Grotesque', sans-serif;
-            scroll-margin-top: 100px;
+            scroll-margin-top: 5vw;
         }
 
         .grid-container {
@@ -75,9 +75,7 @@
 
         .grid-container img {
             width: 100%;
-            height: auto;
             object-fit: cover;
-
         }
 
         .pic1 {
@@ -113,9 +111,7 @@
         }
 
         .container2 img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
+            max-width: 100%;
         }
 
         .container3 {
@@ -128,8 +124,6 @@
 
         .container3 img {
             width: 100%;
-            height: auto;
-            object-fit: cover;
         }
 
         .container4 {
@@ -138,13 +132,10 @@
             grid-gap: 2%;
             margin: 3%;
             margin-bottom: 3%;
-
         }
 
         .container4 img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
+            max-width: 100%;
         }
 
         .pointless {
@@ -220,7 +211,6 @@
 
         .blendingoptions img {
             width: 100%;
-            height: auto;
         }
 
         .blendingoptions2 {
@@ -232,8 +222,6 @@
 
         .blendingoptions2 img {
             width: 100%;
-            height: auto;
-            object-fit: cover;
         }
 
         .rose {
@@ -241,7 +229,6 @@
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 2%;
             margin: 3%;
-            align-content: space-evenly;
         }
 
         .rose img {
@@ -272,6 +259,7 @@
             .text2 {
                 font-size: 4vw;
                 margin-top: 25%;
+                scroll-margin-top: 40px;
             }
 
             .navigation li a {

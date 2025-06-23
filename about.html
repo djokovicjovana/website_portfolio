@@ -9,7 +9,6 @@
         }
 
         ul {
-            overflow: hidden;
             background-color: #121212;
             display: flex;
             justify-content: center;
@@ -34,19 +33,21 @@
             padding: 0.3vw 0.6vw;
             font-size: 1.3vw;
             text-decoration: none;
-            width: auto;
         }
+
+        li a:hover,
+        li a.active {
+            color: #afafaf;
+        }
+
+
 
         a {
             color: #fcf5e5;
             text-decoration: underline;
         }
 
-        li a:hover {
-            color: #afafaf;
-        }
-
-        li a.active {
+        a:hover {
             color: #afafaf;
         }
 
@@ -55,20 +56,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: row;
-            max-width: 100%;
-            height: auto;
             font-size: 1vw;
             font-family: 'Bricolage Grotesque', sans-serif;
-            flex-wrap: wrap;
             gap: 2%;
             margin-top: 9%;
             padding: 3%;
-        }
-
-        .text {
-            flex: 1;
-            text-align: left;
         }
 
         *,
@@ -80,87 +72,31 @@
         @media only screen and (max-width: 768px) {
             .container {
                 flex-direction: column;
-                max-width: 100%;
-                width: 100%;
-                overflow-x: hidden;
-            }
-
-            .pic {
-                max-width: 100%;
-                width: 100%;
-                height: auto;
-                display: block;
+                margin-top: 15%;
             }
 
             .text {
-                max-width: 100%;
-                width: 100%;
-                height: auto;
                 font-size: 14px;
 
             }
 
             ul {
                 font-size: 10px;
-                max-width: 100%;
             }
 
             li a {
                 font-size: 20px;
                 padding: 5px 10px;
-                width: auto;
-                box-sizing: border-box;
-                white-space: normal;
             }
-        }
-
-        .pic {
-            max-width: 100%;
-            height: auto;
-            display: block;
         }
 
         @media only screen and (min-width: 3080px) {
-            .container {
-                flex-direction: column;
-                max-width: 100%;
-                width: 100%;
-                overflow-x: hidden;
-            }
 
             .pic {
-                max-width: 100%;
                 width: 100%;
-                height: auto;
-                display: block;
+                margin: 2%;
+                padding: 2%;
             }
-
-            .text {
-                max-width: 100%;
-                width: 100%;
-                height: auto;
-                font-size: 14px;
-
-            }
-
-            ul {
-                font-size: px;
-                max-width: 100%;
-            }
-
-            li a {
-                font-size: 20px;
-                padding: 8px 10px;
-                width: auto;
-                box-sizing: border-box;
-                white-space: normal;
-            }
-        }
-
-        .pic {
-            max-width: 100%;
-            height: auto;
-            display: block;
         }
     </style>
 </head>

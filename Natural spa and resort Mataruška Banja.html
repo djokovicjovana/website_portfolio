@@ -59,50 +59,42 @@
 
         .all {
             width: 96%;
-            height: auto;
-            margin-top: 3%;
-
+            margin-top: 5%;
         }
 
         .container {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-gap: 2%;
-            width: 100%;
-            height: 100%;
+            max-width: 100%;
         }
 
         .container img {
-            width: 100%;
-            height: auto;
+            max-width: 100%;
             margin: 2%;
             padding: 2%;
         }
 
         .text {
             grid-area: 1 / 2;
-            width: 100%;
-            height: auto;
-            padding: 2%;
+            max-width: 100%;
+            padding: 3%;
             align-items: center;
         }
 
         .pic1 {
             grid-area: 1 / 1;
-            /* margin-top: 10%; */
         }
 
         .container1 {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            width: 100%;
-            height: 100%;
+            max-width: 100%;
             margin: 2%;
         }
 
         .container1 img {
-            width: 100%;
-            height: auto;
+            max-width: 100%;
         }
 
         .pic2 {
@@ -124,15 +116,12 @@
         }
 
 
-        .base {
-            margin: 3%;
-        }
-
         @media only screen and (max-width: 768px) {
 
             .container,
             .container1 {
                 grid-template-columns: 1fr;
+                overflow: hidden;
             }
 
             .container .pic2,
@@ -164,9 +153,6 @@
             li a {
                 font-size: 20px;
                 padding: 5px 10px;
-                width: auto;
-                box-sizing: border-box;
-                white-space: normal;
             }
 
         }
